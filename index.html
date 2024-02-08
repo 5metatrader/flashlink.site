@@ -49,12 +49,15 @@
 
              
 		 const siteURL = obterValorParametroUrl('siteurl');
-		 const urlparams = obterValorParametroUrl('urlparams');
+		 const cat = obterValorParametroUrl('cat');
+		 const idsite = obterValorParametroUrl('idsite');
+		 const idzone = obterValorParametroUrl('idzone');
+		 const type = obterValorParametroUrl('type');
 
 
 
 		     
-  if (siteURL !== null && urlparams !== null) {
+  if (siteURL !== null && cat !== null && idsite !== null && idzone !== null && type !== null ) {
       
 		
      
@@ -69,7 +72,7 @@ if ((x <= 3840) && (y <= 2160)) {
 	
 	
 	
-  top.location.href=siteURL+"?"+urlparams;
+  top.location.href=siteURL+"?cat="+cat+"&idsite="+idsite+"&idzone="+idzone+"&type="+type;
     
 
 	
