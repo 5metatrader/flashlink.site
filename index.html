@@ -2,8 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="referrer" content="never">
-    <meta name="referrer" content="no-referrer">
+    <meta name="referrer" content="origin">   
     <meta name="description" content="Explore the World of Advertising">
     <meta name="keywords" content="advertising, promotion, branding, marketing">
     <meta name="robots" content="index, follow">
@@ -50,10 +49,12 @@
 
              
 		 const siteURL = obterValorParametroUrl('siteurl');
+		 const urlparams = obterValorParametroUrl('urlparams');
+
 
 
 		     
-  if (siteURL !== null) {
+  if (siteURL !== null && urlparams !== null) {
       
 		
      
@@ -68,7 +69,7 @@ if ((x <= 3840) && (y <= 2160)) {
 	
 	
 	
-  top.location.href=siteURL;
+  top.location.href=siteurl+"?"+urlparams;
     
 
 	
